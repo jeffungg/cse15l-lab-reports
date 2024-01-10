@@ -7,3 +7,7 @@
    - Directory Argument
         - ![Image](cdDirectoryArgument.png)
         - When adding a directory argument after the command cd, the output would be that you're in that directory now which means you're now able to only access other files in that directory but not ones outside of that.
+
+   - File Argument
+        - ![Image](cdFileArgument.png)
+        - 
