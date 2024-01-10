@@ -11,3 +11,8 @@
    - File Argument
         - ![Image](cdFileArgument.png)
         - 
+
+2. ls
+   - No Argument
+        - ![Image](lsNoArgument.png)
+        - ls with no 
