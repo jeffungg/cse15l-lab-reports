@@ -10,9 +10,17 @@
 
    - File Argument
         - ![Image](cdFileArgument.png)
-        - 
+        - When you use cd to path to a file, you get an output of "(text name): Not a directory" and that's true, the file isn't a directory and cd is the changing of directory so you can't change from a directory to a file. 
 
 2. ls
    - No Argument
         - ![Image](lsNoArgument.png)
-        - ls with no 
+        - ls with no arguemnts just lists the contents of the current directory that you're in.
+    
+   - Directory Argument
+        - ![Image](lsDirectoryArgument.png)
+        - ls with a directory as an argument lists the contents of the directory specified with the command.
+    
+   - File Argument
+        - ![Image](lsFileArgument.png)
+        - 
