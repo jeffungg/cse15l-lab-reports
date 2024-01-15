@@ -3,24 +3,34 @@ __1. cd__
    - *No Argument*
         - ![Image](cdNoArgument.png)
         - If you're already in the home directory, inputting cd with no argument does nothing. However, if you're in another directory that isn't the home directory, cd with no argument will take you back to the home directory.
+        - There is no error with the output.
     
    - *Directory Argument*
         - ![Image](cdDirectoryArgument.png)
         - When adding a directory argument after the command cd, the output would be that you're in that directory now which means you're now able to only access other files in that directory but not ones outside of that.
+        - There is no error with the output.
 
    - *File Argument*
         - ![Image](cdFileArgument.png)
-        - When you use cd to path to a file, you get an output of "(text name): Not a directory" and that's true, the file isn't a directory and cd is the changing of directory so you can't change from a directory to a file. 
+        - When you use cd to path to a file, you get an output of "(text name): Not a directory" and that's true, the file isn't a directory and cd is the changing of directory so you can't change from a directory to a file.
+        - There is an error because the purpose of the cd command is to change directories and because a file is not a directory, the command won't be able to run properly.  
 
 __2. ls__
    - *No Argument*
         - ![Image](lsNoArgument.png)
         - ls with no arguemnts just lists the contents of the current directory that you're in.
+        - There is no error with the output.
     
    - *Directory Argument*
         - ![Image](lsDirectoryArgument.png)
         - ls with a directory as an argument lists the contents of the directory specified with the command.
+        - There is no error with the output.
     
    - *File Argument*
         - ![Image](lsFileArgument.png)
-        - 
+        - When you use ls to path to a file, it doesn't list the contents in that file but just lists the specified file instead.
+        - There is no error with the output.
+    
+__3. cat__
+   - *No Argument*
+        - ![Image](catNoArgument.png)
