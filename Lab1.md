@@ -34,3 +34,15 @@ __2. ls__
 __3. cat__
    - *No Argument*
         - ![Image](catNoArgument.png)
+        - When you use cat with no argument, there is no output and instead feels like the command just keeps running before you have to click ctrl+c to stop it.
+        - There is no error with the output.
+    
+   - *Directory Argument*
+        - ![Image](catDirectoryArgument.png)
+        - When you use cat with a directory in the argument, it gives you the output "cat: (directory name): Is a directory" which its true because the cat command is used for displaying the content of files, not directories.
+        - There is an error because since cat is only used for files, and the argument was a directory, it would cause an error.
+    
+   - *File Argument*
+        - ![Image](catFileArgument.png)
+        - When you use cat with a path to a file, it will display the contents of that file and if you put 2 file names in the arguments, it will just display both the files' contents.
+        - There is no error with the output.
