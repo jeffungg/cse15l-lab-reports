@@ -20,3 +20,12 @@ __Part 1__
    
 
 __Part 2__
+  - *Absolute path to the private key*
+    - ![Image](ieng6privatekey.png)
+  - *Absolute path to the public key*
+    - ![Image](ieng6publickey.png)
+  - *`ieng6` log in without password*
+    - ![Image](ieng6withoutpassword.png)
+   
+__Part 3__
+  - *Honestly, I had no idea that we were able to log in to our ieng6 account without a password. When we first logged in, I was thinking that it was going to be tidious but now that we don't have to, everything is going to be just fine.*
