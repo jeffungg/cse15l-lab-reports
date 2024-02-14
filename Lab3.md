@@ -69,4 +69,23 @@ __Part 2 - Researching Commands__
     - This output prints out all the files that are directories in the technical directory.
     - This command line option is useful because when were dealing with large directories, we can identify all the elements that are files or directories to better understand the large directory as a whole. The source that I used for this command line option is this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
 
+  - `empty` command line option
+    - This command line option prints out any empty files / subdirectories in a specfied directory. This command goes through the specified path and looks for any files / subdirectories that have no content in them. If there are none empty, output prints nothing.
+    - *Example 1*
+    - ```
+      Jeffu@Jeff MINGW64 ~/docsearch (main)
+      $ find technical/biomed/ -empty
+      ```
+    - The output of this command was nothing, meaning that there are no empty files in the biomed directory.
+    - *Example 2*
+    - ```
+      Jeffu@Jeff MINGW64 ~/docsearch (main)
+      $ find technical/ -empty
+      ```
+    - Similarly from the previous command, there was no output with the given terminal command, showing that there are no files nor subdirectories in the `technical` directory that are empty.
+    - This command line option is useful because in large directories where it's hard to go through each file / directory manually, you can check which ones are empty and then decide whether you want to keep or delete them. This makes it more efficient and easier in filtering out empty fils. Similarly to the `type` command line, the source I used was this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
+   
+    - 
+
+
   
