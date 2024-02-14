@@ -124,7 +124,39 @@ __Part 2 - Researching Commands__
     - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this <a href="https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/">Webpage</a>.
 
   - `mtime` command line option
-    - This command line option 
+    - This command line option prints out all the files that have been in a specified directory for a certain amount of time `n` (meaning if it has been modified since then). The command line is `find path -mtime +/-n` (`+` meaning greater than the specified time `n`, while `-` meaning less than the specified time `n`).
+    - *Example 1*
+      - ```
+        Jeffu@Jeff MINGW64 ~/docsearch (main)
+        $ find technical/911report/ -mtime +5
+        technical/911report/
+        technical/911report/chapter-1.txt
+        technical/911report/chapter-10.txt
+        technical/911report/chapter-11.txt
+        technical/911report/chapter-12.txt
+        technical/911report/chapter-13.1.txt
+        technical/911report/chapter-13.2.txt
+        technical/911report/chapter-13.3.txt
+        technical/911report/chapter-13.4.txt
+        technical/911report/chapter-13.5.txt
+        technical/911report/chapter-2.txt
+        technical/911report/chapter-3.txt
+        technical/911report/chapter-5.txt
+        technical/911report/chapter-6.txt
+        technical/911report/chapter-7.txt
+        technical/911report/chapter-8.txt
+        technical/911report/chapter-9.txt
+        technical/911report/preface.txt
+        ```
+      - The output of this command prints out all the files that have been in the specified directory for more than 5 days.
+    - *Example 2*
+      - ```
+        Jeffu@Jeff MINGW64 ~/docsearch (main)
+        $ find technical/911report/ -mtime -5
+        ```
+      - The output of this command prints out nothing because the files in the `911report` directory have been in there more than 5 days (from previous example).
+    - This command line option is useful because it gives you a timeframe for when the files in a specified directory was modified without having to explicitly look at the file structure or specific file information. The source that I used for this command line option is this <a href="https://www.redhat.com/sysadmin/linux-find-command">Webpage</a>.
+        
       
       
 
