@@ -28,7 +28,21 @@ __Part 1 - Bugs__
   - ![Image](JunitFailReverseinPlace.png)
  
 - *Code that DOES NOT cause failure inducing input*
+  - ```
+     static void reverseInPlace(int[] arr) {
+    int temp = 0;
+    for(int i = 0; i < arr.length / 2; i += 1) {
+      temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+     }
+    }
+    ```
+- *Symptom for NON failure inducing input*
   - ![Image](JunitPassReverseinPlace.png)
+
+- *FIX*
+  - These changes fix the bugs that consisted with the given code because it now swaps the two elements in the corresponding positions of the array instead of doing it with respect to the middle element.
  
 __Part 2 - Researching Commands__
 - I chose the `find` command
