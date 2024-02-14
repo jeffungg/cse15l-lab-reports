@@ -6,7 +6,6 @@ __Part 1 - Bugs__
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[]{3, 2, 1}, input2);
     }
-  </pre>
   
 - *Does NOT include failure inducing input*
   - <pre>
@@ -15,7 +14,6 @@ __Part 1 - Bugs__
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
-  </pre>
   
 - *Code causing failure inducing input*
   - <pre>
@@ -48,6 +46,7 @@ __Part 2 - Researching Commands__
         technical/biomed/1471-2091-2-10.txt
         technical/biomed/1471-2091-2-11.txt
         ... OMITTING 100+ files ...
+        ```
       
       - This output prints out all the file type files in the biomed directory. (Because the biomed directory have so many files, only the first few are shown.)
     - *Example 2*
@@ -65,6 +64,7 @@ __Part 2 - Researching Commands__
         technical/government/Media
         technical/government/Post_Rate_Comm
         technical/plos
+        ```
       
       - This output prints out all the files that are directories in the technical directory.
     - This command line option is useful because when were dealing with large directories, we can identify all the elements that are files or directories to better understand the large directory as a whole. The source that I used for this command line option is this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
@@ -75,12 +75,14 @@ __Part 2 - Researching Commands__
       - ```
         Jeffu@Jeff MINGW64 ~/docsearch (main)
         $ find technical/biomed/ -empty
+        ```
       
       - The output of this command was nothing, meaning that there are no empty files in the biomed directory.
     - *Example 2*
       - ```
         Jeffu@Jeff MINGW64 ~/docsearch (main)
         $ find technical/ -empty
+        ```
       
       - Similarly from the previous command, there was no output with the given terminal command, showing that there are no files nor subdirectories in the `technical` directory that are empty.
     - This command line option is useful because in large directories where it's hard to go through each file / directory manually, you can check which ones are empty and then decide whether you want to keep or delete them. This makes it more efficient and easier in filtering out empty fils. Similarly to the `type` command line, the source I used was this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
@@ -98,6 +100,7 @@ __Part 2 - Researching Commands__
         technical/biomed/1468-6708-3-4.txt
         technical/biomed/1468-6708-3-7.txt
         ... OMITTS 30+ FILES...
+        ```
       
       - The output of this command prints out all the files that are less than 2 gigabytes in the `biomed` directory.
     - *Example 2*
@@ -119,6 +122,7 @@ __Part 2 - Researching Commands__
         technical/911report/chapter-7.txt
         technical/911report/chapter-8.txt
         technical/911report/chapter-9.txt
+        ```
       
       - The output of this command prints out all the files that are greater than 50 kilobytes in the `911report` directory.
     - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this <a href="https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/">Webpage</a>.
