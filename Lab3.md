@@ -22,7 +22,6 @@ __Part 1 - Bugs__
       arr[i] = arr[arr.length - i - 1];
      }
     }
-  </pre>
 
 - *Symptom for failure inducing input from above code*
   - ![Image](JunitFailReverseinPlace.png)
