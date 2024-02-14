@@ -84,8 +84,46 @@ __Part 2 - Researching Commands__
       ```
     - Similarly from the previous command, there was no output with the given terminal command, showing that there are no files nor subdirectories in the `technical` directory that are empty.
     - This command line option is useful because in large directories where it's hard to go through each file / directory manually, you can check which ones are empty and then decide whether you want to keep or delete them. This makes it more efficient and easier in filtering out empty fils. Similarly to the `type` command line, the source I used was this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
-   
-    - 
+    
+  - `size` command line option
+    - This command line option prints out all the files or directories that are of a specified size `n` when running the command. This option comes with a few suffixes for `n`, `c` for bytes, `k` for kilobytes, `M` for megabytes and `G` for gigabytes. The command line is `find path -find +/-n` (`+` meaning greater than the specified size, while `-` meaning less than the specified size).
+    - *Example 1*
+    - ```
+      Jeffu@Jeff MINGW64 ~/docsearch (main)
+      $ find technical/biomed/ -size -2G
+      technical/biomed/
+      technical/biomed/1468-6708-3-1.txt
+      technical/biomed/1468-6708-3-10.txt
+      technical/biomed/1468-6708-3-3.txt
+      technical/biomed/1468-6708-3-4.txt
+      technical/biomed/1468-6708-3-7.txt
+      ... OMITTS 30+ FILES...
+      ```
+    - The output of this command prints out all the files that are less than 2 gigabytes in the `biomed` directory.
+    - *Example 2*
+    - ```
+      Jeffu@Jeff MINGW64 ~/docsearch (main)
+      $ find technical/911report/ -size +50k
+      technical/911report/chapter-1.txt
+      technical/911report/chapter-11.txt
+      technical/911report/chapter-12.txt
+      technical/911report/chapter-13.1.txt
+      technical/911report/chapter-13.2.txt
+      technical/911report/chapter-13.3.txt
+      technical/911report/chapter-13.4.txt
+      technical/911report/chapter-13.5.txt
+      technical/911report/chapter-2.txt
+      technical/911report/chapter-3.txt
+      technical/911report/chapter-5.txt
+      technical/911report/chapter-6.txt
+      technical/911report/chapter-7.txt
+      technical/911report/chapter-8.txt
+      technical/911report/chapter-9.txt
+      ```
+    - The output of this command prints out all the files that are greater than 50 kilobytes in the `911report` directory.
+    - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this <a href="(https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/">Webpage</a>.
+      
+      
 
 
   
