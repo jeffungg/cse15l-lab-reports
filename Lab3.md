@@ -121,7 +121,7 @@ __Part 2 - Researching Commands__
       technical/911report/chapter-9.txt
       ```
     - The output of this command prints out all the files that are greater than 50 kilobytes in the `911report` directory.
-    - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this <a href="(https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/">Webpage</a>.
+    - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this <a href="https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/">Webpage</a>.
       
       
 
