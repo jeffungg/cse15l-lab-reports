@@ -80,7 +80,7 @@ __Part 2 - Researching Commands__
         ```
       
       - This output prints out all the files that are directories in the technical directory.
-    - This command line option is useful because when were dealing with large directories, we can identify all the elements that are files or directories to better understand the large directory as a whole. The source that I used for this command line option is this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
+    - This command line option is useful because when were dealing with large directories, we can identify all the elements that are files or directories to better understand the large directory as a whole. The source that I used for this command line option is https://www.geeksforgeeks.org/find-command-in-linux-with-examples.
 
   - `empty` command line option
     - This command line option prints out any empty files / subdirectories in a specfied directory. This command goes through the specified path and looks for any files / subdirectories that have no content in them. If there are none empty, output prints nothing.
@@ -98,7 +98,7 @@ __Part 2 - Researching Commands__
         ```
       
       - Similarly from the previous command, there was no output with the given terminal command, showing that there are no files nor subdirectories in the `technical` directory that are empty.
-    - This command line option is useful because in large directories where it's hard to go through each file / directory manually, you can check which ones are empty and then decide whether you want to keep or delete them. This makes it more efficient and easier in filtering out empty fils. Similarly to the `type` command line, the source I used was this <a href="https://www.geeksforgeeks.org/find-command-in-linux-with-examples">Webpage</a>
+    - This command line option is useful because in large directories where it's hard to go through each file / directory manually, you can check which ones are empty and then decide whether you want to keep or delete them. This makes it more efficient and easier in filtering out empty fils. Similarly to the `type` command line, the source I used was https://www.geeksforgeeks.org/find-command-in-linux-with-examples.
     
   - `size` command line option
     - This command line option prints out all the files or directories that are of a specified size `n` when running the command. This option comes with a few suffixes for `n`, `c` for bytes, `k` for kilobytes, `M` for megabytes and `G` for gigabytes. The command line is `find path -find +/-n` (`+` meaning greater than the specified size, while `-` meaning less than the specified size).
@@ -138,7 +138,7 @@ __Part 2 - Researching Commands__
         ```
       
       - The output of this command prints out all the files that are greater than 50 kilobytes in the `911report` directory.
-    - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this <a href="https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/">Webpage</a>.
+    - This command line option is useful because it lets you more efficiently clean up directories that may be too large or small. Also, this command helps you identify files that are more storage costly and then be able to allow you to know when to create more space if needed. The source that I used for this command line option is this https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/.
 
   - `mtime` command line option
     - This command line option prints out all the files that have been in a specified directory for a certain amount of time `n` (meaning if it has been modified since then). The command line is `find path -mtime +/-n` (`+` meaning greater than the specified time `n`, while `-` meaning less than the specified time `n`).
@@ -172,7 +172,7 @@ __Part 2 - Researching Commands__
         $ find technical/911report/ -mtime -5
         ```
       - The output of this command prints out nothing because the files in the `911report` directory have been in there more than 5 days (from previous example).
-    - This command line option is useful because it gives you a timeframe for when the files in a specified directory was modified without having to explicitly look at the file structure or specific file information. The source that I used for this command line option is this <a href="https://www.redhat.com/sysadmin/linux-find-command">Webpage</a>.
+    - This command line option is useful because it gives you a timeframe for when the files in a specified directory was modified without having to explicitly look at the file structure or specific file information. The source that I used for this command line option is this https://www.redhat.com/sysadmin/linux-find-command.
         
       
       
