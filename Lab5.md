@@ -36,5 +36,9 @@ __Part 1: Debugging Scenario__
           - ![Image](grade.sh.png)
         - Command line command `bash grade.sh Student2FibonacciSeriesExample.java`
         - The for loop was iterating 11 times instead of 10 times so the output would add an extra number at the end.
+    
+
+__Part 2: Reflection__
+    - One cool thing that I learned in the second half of this quarter is that you can do a lot and literally everything straight from the command line. You can edit, add, delete, modify and get information from all the files and directories. I know that is barely scraping the surface but that's just mind boggling. 
        
 
